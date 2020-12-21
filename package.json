@@ -1,0 +1,37 @@
+{
+  "name": "muk-football",
+  "version": "1.0.0",
+  "description": "Fantasy Football app",
+  "main": "server.compiled.js",
+  "scripts": {
+    "start": "node server.compiled.js",
+    "build": "babel server.js --out-file server.compiled.js",
+    "dev": "nodemon --exec node server.compiled.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "muk kids",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "dotenv": "^8.2.0",
+    "espn-fantasy-football-api": "^0.16.1",
+    "express": "^4.17.1",
+    "express-session": "^1.17.1",
+    "mongoose": "^5.10.9",
+    "passport": "^0.4.1",
+    "passport-github": "^1.1.0",
+    "passport-google-oauth": "^2.0.0",
+    "passport-google-oauth2": "^0.2.0",
+    "passport-local": "^1.0.0",
+    "path": "^0.12.7",
+    "react-csv-reader": "^3.1.1",
+    "regenerator-runtime": "^0.13.7"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.12.1",
+    "@babel/core": "^7.12.1",
+    "@babel/node": "^7.12.1",
+    "@babel/preset-env": "^7.12.1",
+    "nodemon": "^2.0.6"
+  }
+}
