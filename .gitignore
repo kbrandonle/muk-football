@@ -1,1 +1,11 @@
-node_modules
+*.DS_Store
+*.pyc
+.git
+
+env
+venv
+
+node_modules/
+npm-debug.log
+bower_components/
+.module-cache
