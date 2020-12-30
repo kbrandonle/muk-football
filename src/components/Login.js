@@ -1,4 +1,6 @@
 import React from "react";
+import frunk from "../styles/frunk.jpg";
+import AppMode from "../Page";
 
 class Login extends React.Component {
   constructor() {
@@ -8,9 +10,14 @@ class Login extends React.Component {
     this.state = {};
   }
 
+  handleLoginSubmit = () => {
+    //placeholder until the backend is setup
+    this.props.changePage(AppMode.TEAM);
+  };
+
   render() {
     return (
-      <div>
+      <div style={{ backgroundImage: frunk }}>
         <center>
           <form id="loginInterface" onSubmit={this.handleLoginSubmit}>
             <label htmlFor="emailInput" style={{ padding: 0, fontSize: 24 }}>
@@ -35,7 +42,6 @@ class Login extends React.Component {
                 id="passwordInput"
                 placeholder="Enter Password"
                 pattern=""
-                required={true}
               />
             </label>
             <p className="bg-danger" id="feedback" style={{ fontSize: 16 }} />
