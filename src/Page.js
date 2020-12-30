@@ -7,6 +7,6 @@ const Page = {
   WAIVERS: "Waivers",
 };
 
-Object.freeze(AppMode); //This ensures that the object is immutable.
+Object.freeze(Page); //This ensures that the object is immutable.
 
 export default Page;
