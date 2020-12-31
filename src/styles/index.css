@@ -16,3 +16,22 @@ code {
   width: 40%;
   font-size: 36px;
 }
+
+table {
+  width: 100%;
+}
+
+.manage-team-container {
+  padding: 36px 24px 24px;
+  position: relative;
+  width: 100%;
+}
+
+.manage-team-title {
+  display: inline-block;
+}
+
+.edit-team-btn {
+  display: inline-block;
+  right: 5px;
+}
